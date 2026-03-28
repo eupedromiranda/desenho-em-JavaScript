@@ -9,11 +9,15 @@
 <body>
   <h1>Desenho em JavaScript</h1>
   <canvas id="canvas" width="500" height="500"></canvas>
-  <div class="controls">
-    <button id="clear">Limpar</button>
-    <input type="color" id="colorPicker" value="#000000">
-    <input type="range" id="brushSize" min="1" max="20" value="5">
-  </div>
+ <div class="controls">
+  <button id="clear">Limpar</button>
+
+  <label for="colorPicker">Cor:</label>
+  <input type="color" id="colorPicker" value="#000000">
+
+  <label for="brushSize">Tamanho:</label>
+  <input type="range" id="brushSize" min="1" max="20" value="5">
+</div>
   <script src="script.js"></script>
 </body>
 </html>
