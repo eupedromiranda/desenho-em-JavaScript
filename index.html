@@ -3,21 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>desenhando em JavaScript</title>
+  <title>Desenho em JavaScript</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>Desenho em JavaScript</h1>
-  <canvas id="canvas" width="500" height="500"></canvas>
- <div class="controls">
-  <button id="clear">Limpar</button>
 
-  <label for="colorPicker">Cor:</label>
-  <input type="color" id="colorPicker" value="#000000">
+  <div class="container">
+    <div class="controls">
+      <button id="brush" class="active">Pincel</button>
+      <button id="eraser">Borracha</button>
+      <button id="clear">Limpar</button>
 
-  <label for="brushSize">Tamanho:</label>
-  <input type="range" id="brushSize" min="1" max="20" value="5">
-</div>
+  <div class="color-group">
+    <label for="colorPicker">Cor:</label>
+    <input type="color" id="colorPicker" value="#000000">
+  </div>
+
+      <label for="brushSize">Tamanho:</label>
+      <input type="range" id="brushSize" min="1" max="20" value="5">
+    </div>
+
+    <canvas id="canvas" width="500" height="500"></canvas>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
