@@ -72,3 +72,10 @@ document.getElementById('colorPicker').addEventListener('change', (e) => {
 document.getElementById('brushSize').addEventListener('input', (e) => {
   brushSize = Number(e.target.value);
 });
+
+document.getElementById('save').addEventListener('click', () => {
+  const link = document.createElement('a');
+  link.download = 'meu-desenho.png';
+  link.href = canvas.toDataURL();
+  link.click();
+});
